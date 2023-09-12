@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+div.body {
+  width: 360px;
+  height: 800px;
+  background: linear-gradient(174deg, #313131 0%, #1E1E1E 95.4%);
+  margin: 0px auto;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+div.history {
+  width: inherit;
+  height: 40px;
+  font-size: 24px;
+  color: #6b6b6b;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 16px;
+}
+
+div.result {
+  width: inherit;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 64px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 0px 16px;
+  margin: 16px 0px;
+}
+
+div.body > div.keys {
+  width: inherit;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 0.5px solid #E7D74A;
+  font-family: sans-serif;
+  position: relative;
+}
+
+div.body > div.keys div{
+  cursor: pointer;
+}
+
+div.body > div.keys > div.actions {
+  width: 270px;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: space-between;
+  color: white;
+}
+
+div.body > div.keys > div.actions > div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+
+div.body > div.keys > div.numbers {
+  width: 270px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: space-between;
+  color: white;
+}
+
+div.body > div.keys > div.numbers > div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+div.body > div.keys > div.Accountant {
+  width: 90px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 0.5px solid #E7D74A;
+}
+
+div.body > div.keys > div.Accountant > div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+div.body > div.keys > div.Accountant > div:nth-last-child(1) {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  background-color: #E7D74A;
+}
+
+.click {
+  width: 90px;
+  height: 90px;
+  color: white;
+  background-color: #313131; 
+}
