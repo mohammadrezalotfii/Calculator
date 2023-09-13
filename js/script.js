@@ -19,7 +19,7 @@ his.innerHTML = `${his.textContent}`;
 keys.forEach(function (elem) {
   elem.addEventListener("click", function () {
     elem.classList.add("click");
-    res.textContent += elem.textContent;
+    res.innerHTML += elem.textContent;
     setTimeout(function () {
       elem.classList.remove("click");
     }, 100);
@@ -27,23 +27,23 @@ keys.forEach(function (elem) {
 });
 
 summ.addEventListener("click", function () {
-  res.textContent += summ.Value;
+  res.innerHTML += summ.Value;
 });
 sub.addEventListener("click", function () {
-  res.textContent += sub.Value;
+  res.innerHTML += sub.Value;
 });
 mul.addEventListener("click", function () {
-  res.textContent += mul.Value;
+  res.innerHTML += mul.Value;
 });
 divi.addEventListener("click", function () {
-  res.textContent += divi.Value;
+  res.innerHTML += divi.Value;
 });
 
 equ.addEventListener("click", function () {
-  his.textContent = res.textContent;
-  res.textContent = eval(res.textContent);
+  his.innerHTML = res.innerHTML;
+  res.innerHTML = eval(res.innerHTML);
 });
 clean.addEventListener("click", function () {
-  his.textContent = `${his.textContent} = ${equ} `;
+  his.innerHTML = `${his.innerHTML} = ${eval(res.innerHTML)} `;
   res.textContent = "";
 });
