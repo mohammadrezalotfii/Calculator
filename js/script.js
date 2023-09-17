@@ -44,6 +44,6 @@ equ.addEventListener("click", function () {
   res.innerHTML = eval(res.innerHTML);
 });
 clean.addEventListener("click", function () {
-  his.innerHTML = `${his.innerHTML} = ${eval(res.innerHTML)} `;
   res.textContent = "";
+  his.innerHTML = `${his.innerHTML} = ${eval(res.innerHTML)} `;
 });
